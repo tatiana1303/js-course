@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       //1
+        let n = 100;
+        let i = 0;
+        while (i <= n) {
+            console.log(i++);
+        }
+
+        //2
+        
+        let basketPrice = 0;
+        basket = [{name:'product1', price:10}, {name:'product2', price:20}];
+        basket.push({name:'product3', price:30});
+        basket.push({name:'product4', price:30});
+        console.log(basket);
+        function countBasketPrice(basket){
+            
+            for (i = 0; i<basket.length; i++){
+                basketPrice = basketPrice + basket[i].price;
+            }
+            return basketPrice;
+        }
+        console.log('итого в корзине:' +countBasketPrice(basket));
+      
+
+ //3   
+ 
+    for (i = 0; i < 10; i++) {
+        console.log(i);
+    }     
+  
+    //4
+    let arr = [];
+    for (i = 0; i<20; i++){
+        arr.push('x');
+        console.log(arr);
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
